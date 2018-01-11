@@ -3,10 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>Elliot's Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+    <header>
+      <div class="containerMax">
+        <h1 class="titleName">Elliot Reymond-Christensen</h1>
+        <nav>
+         <ul>
+           <li class="navButton"><a href="index.html">About</a></li>
+           <li class="navButton" id="buttonBorder"><a  href="portfolio.html">Portfolio</a></li>
+           <li class="navButton"><a  href="contact.html">Contact</a></li>
+         </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="containerMax">
+      <div class="overflow">
+        <section class="contactWindow">
+          <h2>Contact Me</h2>
+          <hr>
+          <form action="index.html" method="post">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="your name">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="your-email@email.com">
+            <label>Message</label>
+            <textarea name="message" placeholder="your message goes here"></textarea>
+            <button type="button" name="button">Submit</button>
+          </form>
+        </section>
+        <section class="connect">
+          <h3>Connect with Me</h3>
+          <hr>
+          <a href="https://www.linkedin.com/in/elliot-reymond-christensen/"><img class="connectIcon" src="img/linked.svg" alt="LinkedIn"></a>
+          <a href="https://github.com/ejreymond-christensen"><img class="connectIcon" src="img/git.png" alt="Github"></a>
+          <a href="https://stackoverflow.com/users/7422741/ejreymond-christensen"><img class="connectIcon" src="img/so-icon.svg" alt="StackOverflow"></a>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="containerMax">
+        <p id="footerText">© Copyright 2018 Elliot Reymond-Christensen</p>
+      </div>
+    </footer>
   </body>
 </html>

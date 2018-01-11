@@ -1,2 +1,2 @@
-# ejreymond-christensen.github.io
-website
+# UT-HW1-HTML-CSS-PORTFOLIO
+Portfolio Project using only HTML/CSS

@@ -1,14 +1,16 @@
 *{
   box-sizing: border-box;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  text-decoration: none;
+  color: #777;
 }
 
 body{
     background-image: url("../img/light_grey.png");
     margin: 0;
-    color: #777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+/*Header Styles*/
 header{
   width: 100%;
   background-color: #fff;
@@ -16,88 +18,171 @@ header{
   clear: both;
   margin-bottom: 20px;
 }
+
 .titleName{
   font-family: 'Georgia', Times, Times New Roman, serif;
   background-color: #4aaaa5;
-  width: auto;
   float: left;
   margin: auto;
   padding: 11px;
   color: #ffffff;
   border-radius: 20px 20px 0 0;
 }
+
+/*Styles Nav Bar*/
 nav{
   float: right;
-  width: auto;
-  height: auto;
-  padding: 15px 10px;
 }
-ul{
-  width: auto;
-  margin: auto;
-}
+
 .navButton{
   display: inline-block;
-  width: auto;
   padding: 5px;
   list-style: none;
-  color: #777;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  text-decoration: none;
 }
+
+.navButton:hover {
+  background-color: #4aaaa5;
+}
+
 #buttonBorder{
   border-left: 1px solid #D6D6D6;
   border-right: 1px solid #D6D6D6;
-  padding: 5px;
 }
 
+/*Sets the max-width of content of Header-Body-Footer*/
 .containerMax{
-  width: auto;
   max-width: 960px;
   margin: 0 auto;
 }
+
 .overflow{
-  overflow-y: auto;
+  overflow: auto;
+  clear: both;
 }
 
-.biopic{
-  width: auto;
-  max-width: 650px;
+/*Main Content window*/
+.biopic, .contactWindow, .projectWindow{
+  width: 650px;
   float: left;
   background-color: #ffffff;
   padding: 15px;
+  margin-bottom: 12px;
   text-align: justify;
   border-radius: 10px;
+  box-shadow: 10px 10px 18px -6px rgba(0,0,0,0.52);
 }
+
 h2, h3{
   font-family: 'Georgia', Times, Times New Roman, serif;
   color: #4aaaa5;
+  margin-top: 5px;
 }
+
 #profilePic{
   float: left;
   margin: 16px 15px 0 0;
+  position: relative;
+  top: -6px;
 }
+
 .connect{
-  width: auto;
-  max-width: 270px;
+  width: 270px;
   float: right;
   background-color: #ffffff;
-  padding: 15px;
+  padding: 15px 30px;
+  margin-right: 12px;
   border-radius: 10px;
+  box-shadow: 10px 10px 18px -6px rgba(0,0,0,0.52);
 }
+
 .connectIcon{
   height: 50px;
   width: 50px;
+  margin: 0 8px;
 }
+
+/*Styles for the footer*/
 footer{
   background-color: #666;
-  display: block;
   width: 100%;
   border-top: 5px solid #4aaaa5;
   margin-top: 20px;
 }
+
 #footerText{
   margin: 0 auto;
   padding: 20px 0;
   text-align: center;
+}
+
+/*Styles for the Contact Page*/
+form{
+  display: block;
+  width: 100%;
+  float: none;
+}
+
+label, input, textarea{
+  display: block;
+  float: none;
+  width: 95%;
+  margin: 8px;
+}
+
+input{
+  padding: 8px;
+  border: 1px solid #D6D6D6;
+  font-size: 12px;
+}
+
+textarea{
+  height: 250px;
+  padding: 8px;
+  border: 1px solid #D6D6D6;
+  font-size: 12px;
+}
+
+button{
+  font-size: 18px;
+  background-color: #4aaaa5;
+  padding: 5px;
+  border: none;
+  position: relative;
+  left: 9px;
+  color: #fff;
+}
+
+/*Styles for the Portfolio Page*/
+.photoContainer{
+  float: left;
+  width: 49%;
+  height: 300px;
+}
+
+.photoBanner{
+  position: relative;
+  bottom: 235px;
+  left: 31px;
+  width: 249px;
+  height: 250px;
+  background-color: #4aaaa5;
+  color: #fff;
+  padding-top: 220px;
+  padding-left: 10px;
+  border-radius:5px;
+}
+
+.photoImage{
+  position: relative;
+  left: 30px;
+  top: 35px;
+  /*Clipy Styling*/
+  -webkit-clip-path: circle(99.6% at 100% 0);
+  clip-path: circle(99.6% at 100% 0);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.photoBanner:Hover{
+  background-color: #e45f56;
 }
