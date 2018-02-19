@@ -1,51 +1,78 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <title>Elliot's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <div class="containerMax">
-        <h1 class="titleName">Elliot Reymond-Christensen</h1>
-        <nav>
-         <ul>
-           <li class="navButton"><a href="index.html">About</a></li>
-           <li class="navButton" id="buttonBorder"><a  href="portfolio.html">Portfolio</a></li>
-           <li class="navButton"><a  href="contact.html">Contact</a></li>
-         </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="containerMax">
-      <div class="overflow">
-        <section class="biopic">
-          <h2>About Me</h2>
-          <hr>
-          <img id="profilePic" src="img/profile.jpg" alt="profile photo">
-          <div class="bioText">
-            <p>Hi! My name is Elliot and I am a Full-Stack Developer. I have a Front-End Nano-Degree from Udacity and am currently taking the University of Texas Full-Stack Developer Program. I decided to up my skills after I fell in love with coding two years ago.</p>
-            <p>Before this, I had studied in France at the Université de Blaise Pascal and at the University of Texas in El Paso. I also did a year exchange program in The Hague, Netherlands. I love to travel and experience new cultures! This has really helped me in my new coding life as I am used to living outside of the comfort zone and always being pushed to learn.</p>
-            <p>I also have 8 years experience working in international business. I was doing Purchasing and Planning between global locations. I was even given the oppurtunity to transfer with my company as a local employee from Texas to Norway. It was a beautiful country, but I decided to move back to Texas so I could warm up.</p>
-            <p>Cheers! Elliot</p>
-          </div>
-        </section>
-        <section class="connect">
-          <h3>Connect with Me</h3>
-          <hr>
-          <div>
-            <a href="https://www.linkedin.com/in/elliot-reymond-christensen/"><img class="connectIcon" src="img/linked.svg" alt="LinkedIn"></a>
-            <a href="https://github.com/ejreymond-christensen"><img class="connectIcon" src="img/git.png" alt="Github"></a>
-            <a href="https://stackoverflow.com/users/7422741/ejreymond-christensen"><img class="connectIcon" src="img/so-icon.svg" alt="StackOverflow"></a>
-          </div>
-        </section>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Elliot's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Lobster|Special+Elite" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="titleImg">
+    <img id="elliot" src="imgs/elliot70.svg" alt="paris">
+    <img id="elliotmobile" src="imgs/elliotmobile70.svg" alt="paris">
+    <span id="scrollArrow"><a href="#bio"><i class="fas fa-chevron-circle-down"></i></a></span>
+  </div>
+  <section id="bio">
+    <h2>Bio</h2>
+    <p>Hi! My name is Elliot and I am a Full-Stack Developer. I have a Front-End Nano-Degree from Udacity and am currently taking the University of Texas Full-Stack Developer Program. I decided to up my skills after I fell in love with coding two years ago.</p>
+    <p>Before this, I had studied in France at the Université de Blaise Pascal and at the University of Texas in El Paso. I also did a year exchange program in The Hague, Netherlands. I love to travel and experience new cultures! This has really helped me
+      in my new coding life as I am used to living outside of the comfort zone and always being pushed to learn.</p>
+    <p>I also have 8 years experience working in international business. I was doing Purchasing and Planning between global locations. I was even given the oppurtunity to transfer with my company as a local employee from Texas to Norway. It was a beautiful
+      country, but I decided to move back to Texas so I could warm up.</p>
+    <p>Cheers! Elliot </p>
+    <img id="profilePic" src="imgs/logo.jpg" alt="profile picture">
+  </section>
+  <div class="parallax arc">
+  </div>
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="projects">
+      <div class="card-container">
+        <a href="https://ejreymond-christensen.github.io/Udacity-MapProject" target="_blank">
+          <div class="card" style="--image: url('../imgs/auvergne.png'); --angle: 20deg; --x: 25%; --y: -20%; --caption: 'Patrimoine D\'Auvergne'"></div>
+        </a>
+        <a href="https://ejreymond-christensen.github.io/ut-hangman-game/" target="_blank">
+          <div class="card" style="--image: url('../imgs/hang.png'); --angle: 15deg; --x: 30%; --y: 10%; --caption: 'Geography Hangman'"></div>
+        </a>
+        <a href="https://ejreymond-christensen.github.io/ut-project1-muse/index.html" target="_blank">
+          <div class="card" style="--image: url('../imgs/muse.png'); --angle: -5deg; --x: 5%; --y: 15%; --caption: 'Muse Project'"></div>
+        </a>
+        <a href="https://ejreymond-christensen.github.io/ut-rps-multiplayer/" target="_blank">
+          <div class="card" style="--image: url('../imgs/rps.png'); --angle: -15deg; --x: -40%; --y: 0%; --caption: 'Rock, Paper, Scissors'"></div>
+        </a>
+        <a href="https://ejreymond-christensen.github.io/ut-game-of-thrones-rpg/" target="_blank">
+          <div class="card" style="--image: url('../imgs/got.png'); --angle: -1deg; --x: -10%; --y: -20%; --caption: 'Game of Thrones RPG'"></div>
+        </a>
+        <a href="https://ejreymond-christensen.github.io/ut-trivia-game/" target="_blank">
+          <div class="card" style="--image: url('../imgs/trivia.png'); --angle: -4deg; --x: -20%; --y: 5%; --caption: 'Trivia Game'"></div>
+        </a>
       </div>
     </div>
-    <footer>
-      <div class="containerMax">
-        <p id="footerText">© Copyright 2018 Elliot Reymond-Christensen</p>
-      </div>
-    </footer>
-  </body>
+  </section>
+  <div class="parallax">
+  </div>
+  <section class="contact">
+    <h2>Contact</h2>
+    <div class="contactLeft">
+      <p>Elliot Reymond-Christensen</p>
+      <p><i class="fas fa-home"></i>&nbsp; Austin, Texas</p>
+      <p><i class="fas fa-phone"></i>&nbsp; 915.352.7130</p>
+      <p><i class="far fa-envelope"></i>&nbsp; elliotchristensen@gmail.com</p>
+    </div>
+    <div class="contactRight">
+      <a href="https://github.com/ejreymond-christensen" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/elliot-reymond-christensen/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/7422741/ejreymond-christensen" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+    </div>
+  </section>
+  <footer>
+    <p class="footerText">© Copyright 2018 Elliot Reymond-Christensen</p>
+  </footer>
+</body>
+
 </html>
