@@ -240,14 +240,14 @@ footer {
   #elliotmobile {
     display: none;
   }
-  html {
-    background-image: url("../imgs/abbie-bernet-326185mobile.jpg");
-  }
 }
 
 @media only screen and (max-width:768px) {
   #elliot {
     display: none;
+  }
+  html {
+    background-image: url("../imgs/abbie-bernet-326185mobile.jpg");
   }
 }
 
