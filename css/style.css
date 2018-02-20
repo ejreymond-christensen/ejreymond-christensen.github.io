@@ -248,6 +248,7 @@ footer {
   }
   html {
     background-image: url("../imgs/abbie-bernet-326185mobile.jpg");
+    max-height: 1025px;
   }
 }
 
