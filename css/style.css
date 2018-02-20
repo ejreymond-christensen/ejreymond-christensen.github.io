@@ -210,14 +210,23 @@ footer {
   will-change: opacity;
 }
 
-.card:after {
+.cardTitle {
   display: block;
-  content: var(--caption);
   font-weight: 500;
   color: #555;
   font-size: 3vmin;
   opacity: .75;
   text-align: center;
+  margin: 10px 0;
+}
+.subtitle {
+  display: block;
+  color: #555;
+  font-size: 2vmin;
+  opacity: .75;
+  text-align: center;
+  margin: 15px 0 0 0;
+  text-decoration: none;
 }
 
 .contactLeft {
@@ -249,6 +258,7 @@ footer {
   html {
     background-image: url("../imgs/abbie-bernet-326185mobile2.jpg");
     max-height: 1200px;
+    height: auto;
   }
 }
 
