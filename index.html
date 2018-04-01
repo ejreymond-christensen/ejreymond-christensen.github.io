@@ -8,7 +8,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato|Lobster|Special+Elite" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
   <section id="bio">
     <h2>Bio</h2>
     <p>Hi! My name is Elliot and I am a Full-Stack Developer. I have a Front-End Nano-Degree from Udacity and I am currently taking the University of Texas Full-Stack Developer Program. I have been coding for two years and have developed many front-end and full-stack projects.</p>
-    <p>In addition to web development, I also have exprience in international business, which gives me an interesting perspective when it comes to my approach to my work. I understand not only the development side of a project, but the business aspect too.</p>
+    <p>In addition to web development, I also have experience in international business, which gives me an interesting perspective when it comes to my approach to my work. I understand not only the development side of a project, but the business aspect too.</p>
     <p>For much of my life I have lived between Texas, France and Norway, with a detour via The Netherlands. I love to travel and experience new cultures! This has had a profound impact on my coding, as I am used to living outside of my comfort zone, always being pushed to learn and adapt while being well versed in communication.</p>
     <p>Here are the technologies that I work with:</p>
     <p>HTML • CSS • JavaScript • MERN Stack • MongoDB • Express.js • React • Node.js • SQL • PHP • Laravel • Handlebars • Firebase • Heroku • GIT • GitHub • API’s • Testing • SEO • Responsive Design</p>
@@ -31,43 +31,76 @@
   </div>
   <section class="portfolio">
     <h2>Portfolio</h2>
-    <div class="projects">
-      <div class="card-container">
-        <a href="https://ejreymond-christensen.github.io/Udacity-MapProject" target="_blank">
-          <div class="card" style="--image: url('../imgs/auvergne.png'); --angle: 20deg; --x: 25%; --y: -20%;">
-            <p class="cardTitle">Patrimoine D'Auvergne</p>
-            <p class ="subtitle">HTML - CSS - JS - Knockout - Google Maps API</p>
-          </div>
+    <h4 class= "filter-button-group"><span id= "allBtn" class="underline" data-filter="*">View All</span> | <span id= "frontBtn" data-filter=".front-end">Front-End</span> | <span id= "fullBtn" data-filter=".full-stack">  Full-Stack</span></h4>
+    <div class="projects grid">
+      <div class="card grid-item front-end">
+        <a href="https://ejreymond-christensen.github.io/music-trivia-with-timeouts/" target="_blank">
+          <img src= "imgs/trivia.png">
+          <p class="cardTitle">Trivia Game</p>
+          <p class="subtitle">HTML - CSS - jQuery - JS</p>
         </a>
-        <a href="https://ejreymond-christensen.github.io/ut-hangman-game/" target="_blank">
-          <div class="card" style="--image: url('../imgs/hang.png'); --angle: 15deg; --x: 30%; --y: 10%;">
-            <p class="cardTitle">Geography Hangman</p>
-            <p class ="subtitle">HTML - CSS - BootStrap - jQuery - JS</p>
-          </div>
+      </div>
+      <div class="card grid-item full-stack" data-category="full-stack">
+        <a href="https://kiosque-a-journaux.herokuapp.com/index" target="_blank">
+          <img src= "imgs/kiosque.png">
+          <p class="cardTitle">Kiosque à Journaux</p>
+          <p class ="subtitle">HTML - CSS - JS - jQuery - Handlebars - Express - Node - Mongo - Mongoose</p>
         </a>
-        <a href="https://ejreymond-christensen.github.io/ut-project1-muse/index.html" target="_blank">
-          <div class="card" style="--image: url('../imgs/muse.png'); --angle: -5deg; --x: 5%; --y: 15%;">
-            <p class="cardTitle">Muse Project</p>
-            <p class ="subtitle">HTML - CSS - Materialize - JS - Firebase - APIs</p>
-          </div>
+      </div>
+      <div class="card grid-item front-end">
+        <a href="https://ejreymond-christensen.github.io/muse-wine-pairing/" target="_blank">
+          <img src= "imgs/muse.png">
+          <p class="cardTitle">Muse</p>
+          <p class ="subtitle">HTML - CSS - Materialize - JS - Firebase - APIs</p>
         </a>
-        <a href="https://ejreymond-christensen.github.io/ut-rps-multiplayer/" target="_blank">
-          <div class="card" style="--image: url('../imgs/rps.png'); --angle: -15deg; --x: -40%; --y: 0%;">
-            <p class="cardTitle">Rock, Paper, Scissors</p>
-            <p class ="subtitle">HTML - CSS - BootStrap - jQuery - JS - Firebase</p>
-          </div>
+      </div>
+      <div class="card grid-item front-end">
+        <a href="https://ejreymond-christensen.github.io/game-of-thrones-rpg/" target="_blank">
+          <img src= "imgs/got.png">
+          <p class="cardTitle">Game of Thrones RPG</p>
+          <p class="subtitle">HTML - CSS - BootStrap - jQuery - JS</p>
         </a>
-        <a href="https://ejreymond-christensen.github.io/ut-game-of-thrones-rpg/" target="_blank">
-          <div class="card" style="--image: url('../imgs/got.png'); --angle: -1deg; --x: -10%; --y: -20%;">
-            <p class="cardTitle">Game of Thrones RPG</p>
-            <p class="subtitle">HTML - CSS - BootStrap - jQuery - JS</p>
-          </div>
+      </div>
+      <div class="card grid-item full-stack" data-category="full-stack">
+        <a href="https://pied-piper-bw.herokuapp.com/iteminfo" target="_blank">
+          <img src= "imgs/piedp.png">
+          <p class="cardTitle">Buyer's Workbench</p>
+          <p class ="subtitle">HTML - CSS - JS - jQuery - Handlebars - Express - Node - Sequelize - MySQL</p>
         </a>
-        <a href="https://ejreymond-christensen.github.io/ut-trivia-game/" target="_blank">
-          <div class="card" style="--image: url('../imgs/trivia.png'); --angle: -4deg; --x: -20%; --y: 5%;">
-            <p class="cardTitle">Trivia Game</p>
-            <p class="subtitle">HTML - CSS - jQuery - JS</p>
-          </div>
+      </div>
+      <div class="card grid-item front-end">
+        <a href="https://ejreymond-christensen.github.io/react-memory/" target="_blank">
+          <img src= "imgs/ww.png">
+          <p class="cardTitle">Westworld React Memory</p>
+          <p class ="subtitle">HTML - CSS - JS - React</p>
+        </a>
+      </div>
+      <div class="card grid-item front-end">
+        <a href="https://ejreymond-christensen.github.io/Patrimoine-d-Auvergne/" target="_blank">
+          <img src= "imgs/auvergne.png">
+          <p class="cardTitle">Patrimoine D'Auvergne</p>
+          <p class ="subtitle">HTML - CSS - JS - Knockout - Google Maps API</p>
+        </a>
+      </div>
+      <div class="card grid-item front-end">
+        <a href="https://ejreymond-christensen.github.io/jetsetter-geo-hangman/" target="_blank">
+          <img src= "imgs/hang.png">
+          <p class="cardTitle">Geography Hangman</p>
+          <p class ="subtitle">HTML - CSS - BootStrap - jQuery - JS</p>
+        </a>
+      </div>
+      <div class="card grid-item front-end">
+        <a href="https://ejreymond-christensen.github.io/rock-paper-scissors-multiplayer/" target="_blank">
+          <img src= "imgs/rps.png">
+          <p class="cardTitle">Rock, Paper, Scissors</p>
+          <p class ="subtitle">HTML - CSS - BootStrap - jQuery - JS - Firebase</p>
+        </a>
+      </div>
+      <div class="card grid-item full-stack" data-category="full-stack">
+        <a href="https://taco-time.herokuapp.com/" target="_blank">
+          <img src= "imgs/taco.png">
+          <p class="cardTitle">Taco Time</p>
+          <p class ="subtitle">HTML - CSS - JS - jQuery - Handlebars - Express - Node - Sequelize - MySQL</p>
         </a>
       </div>
     </div>
@@ -91,6 +124,10 @@
   <footer>
     <p class="footerText">© Copyright 2018 Elliot Reymond-Christensen</p>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/imageloaded.js"></script>
+  <script src="js/isotope.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
